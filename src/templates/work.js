@@ -40,11 +40,11 @@ export const query = graphql`
       }
       title
       excerpt
-      gallery {
-        resize(height: 200, imgixParams: { fm: "jpg", auto: "compress" }) {
-          src
-        }
-      }
+      # gallery {
+      #   resize(height: 200, imgixParams: { fm: "jpg", auto: "compress" }) {
+      #     src
+      #   }
+      # }
       descriptionNode {
         childMarkdownRemark {
           html
